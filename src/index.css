@@ -16,24 +16,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 .app-container {
   padding: 10px;
   max-width: 860px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.btn {
+  width: 130px;
+  padding: 5px 0px;
+  background-color: var(--card);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--shadow);
+  border: none;
+  cursor: pointer;
+}
 .card-grid {
-  margin-top: 40px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

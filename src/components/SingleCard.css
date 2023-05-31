@@ -1,9 +1,14 @@
 .card {
   position: relative;
+  width: 130px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .card img {
   width: 100%;
   display: block;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--shadow);
 }
 .card .front {
   transform: rotateY(90deg);
@@ -22,4 +27,10 @@
 .flipped .back {
   transform: rotateY(90deg);
   transition-delay: 0s;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100px;
+  }
 }

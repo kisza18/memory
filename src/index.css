@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #eaeaea;
+  --card: #e9e1c9;
+  --shadow: #cec5aa;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rajdhani", sans-serif;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-container {
+  padding: 10px;
+  max-width: 860px;
+  margin: 40px auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
